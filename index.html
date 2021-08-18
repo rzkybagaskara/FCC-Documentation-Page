@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <title>Python Documentation Page</title>
+  </head>
+
+<!-- NAVBAR -->
+<nav id = "navbar">
+  <header>Python Documentation
+    <img id = "py_logo" src = "img/python-logo.png" alt="python-logo">
+  </header>
+  <ul>
+  <li><a class = "nav-link" href = "#Introduction">Introduction</a></li>
+  <li><a class = "nav-link" href = "#Rules">Rules</a></li>
+  <li><a class = "nav-link" href = "#Basic_Syntax">Basic Syntax</a></li>
+  <li><a class = "nav-link" href = "#Data_Types">Data Types</a></li>
+  <li><a class = "nav-link" href = "#Operator">Operator</a></li>
+  <li><a class = "nav-link" href = "#if...else_statements">if...else statements</a></li>
+  <li><a class = "nav-link" href = "#Looping_Structure">Looping Structure</a></li>
+  <li><a class = "nav-link" href = "#Array">Array</a></li>
+  <li><a class = "nav-link" href = "#Reference">Reference</a></li>
+  </ul>
+</nav>
+
+  <body>
+    <main id="main-doc">
+      <!-- INTRODUCTION -->
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>Python originally developed for Amoeba Operating System as high-scripting language based on C Programming Language. Python was created by Guido Von Rossum in Amsterdam, Netherlands back in 1990. The reason why Guido named his
+            programming language "Python" is because he was a huge fan of a show called "Monty Python". Therefore, he chose the name "Python" as it's name. From it's release in 1990, Python popularity has grow skyrocket. The latest version
+            of Python is Python version 3.</p>
+          <P>Python have two types of compiling mods, they are:
+          <ul>
+            <li>Interactive
+              <p>Based of interpreter. Each code will be executed per line.</p></li>
+              <li>Script
+                <p>The code will be executed if we click Run on it. Also, this type of compiler is affected by indentation. So, be careful with it.</p></li>
+          </ul>   
+          </P>
+          <p>Nowadays, Python can be use for anything. From web browsing to high tech stuff such as A.I, image recognition, autonomous vehicle, etc. Python also one of the programming languages that user-friendly, especially to the
+            beginners.</p>
+        </article>
+      </section>
+      
+      <!-- RULES -->
+      <section class="main-section" id="Rules">
+        <header>Rules</header>
+        <article>
+          <p>
+            Because Python is based on C Programming Language, there are some similarities and differences between those two languages, they are:
+            <ul>
+              <li>There is no declaration, including data types, argumentation, and variables.</li>
+              <li>Each subprograms are identify between indentation, so indendation plays a huge part in Python.</li>
+              <li>High order data types are use for declaring complex operation in single statement.</li>
+            </ul>
+          </p>
+        </article>
+      </section>
+     
+      <!-- BASIC SYNTAX -->
+      <section class="main-section" id="Basic_Syntax">
+        <header>Basic Syntax</header>
+        <article>
+          <p>To start with Python, the first thing you're gonna do is to type a simple syntax (str type) on your IDE of choice. For starters, type this: </p></article>
+        <code>"Hello World"</code>
+        <p> <strong>For string, you can use single aphostrope (' ') or quotation mark (" "), whichever your choice. </strong></p>
+        <p>Easy right? That's the first step of learning Python on your own!</p>
+      </section>
+     
+      <!--DATA TYPES-->
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <p>There are several data types in Python of which: </p>
+          <ol>
+            <li>Numeric types
+              <ul>
+              <li>int</li>
+              <li>float</li>
+              <li>complex</li>
+              </ul>
+            </li>
+            <li>Text type
+              <ul>
+                <li>str</li>
+              </ul>
+            </li>
+            <li>Boolean type (true or false)
+              <ul>
+                <li>bool</li>
+              </ul>
+            </li>
+            <li>Sequence types
+              <ul>
+                <li>list</li>
+                <li>tuple</li>
+                <li>range</li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+      
+      <!-- OPERATOR -->
+      <section class="main-section" id="Operator">
+        <header>Operator</header>
+        <article>There are 4 types of operators in Python of which: </article>
+        <ol>
+          <li>Arithmatic Operators</li>
+            <img src = "img/op_arith.png" alt = "arithmatic_operators" class = "op-img">
+          <li>Relational Operators (always true or false)</li>
+            <img src = "img/Relational-Operators-in-Python.png" alt = "relational_operators" class = "op-img">
+          <li>Logical Operators</li>
+            <img src = "img/logical_operators.png" alt = "logical_operators" class = "op-img">
+          <li>Bitwise Operators
+            <p>The function of bitwise operators is to manipulate individual bits.</p>
+          </li>
+            <img src = "img/bitwise-operators.jpg" alt = "bitwise_operators" class = "op-img">
+        </ol>
+      </section>
+      
+      <!-- CONTROL STRUCTURE -->
+      <section class="main-section" id="if...else_statements">
+        <header>if...else statements</header>
+        <article>if statements are use for decision-making operations. There are 4 types of if statements in Python, including:</article>
+        <ol>
+          <!-- if -->
+          <li>if
+            <p>if is use for one condiiton. If the condition match the statement (which is True), then the result will be pass on to the next statement below. The basic form of if: 
+              <br>
+              <code>if (condition):</code>
+              <code class = "indent-code">statement</code>
+              <br>
+            For example:
+            </p>
+            <code>a = 33
+              <br>
+              b = 200
+              <br>
+              if b > a:
+              </code>
+              <code class = "indent-code">print("b is greater than a")</code>
+              <p class = "penjelasan">In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a</p>
+          </li>
+          <!-- if..else -->
+          <li>if...else
+            <p>if...else are use for two condition. If the first condition match the decision (which is True), then the condition will continue to the True statement below, whereas the False one will be taken into the False statement (which is else). The basic form of if...else:  
+              <br>
+              <code>if (condition1):
+                <br> </code>
+              <code class = "indent-code">statement1</code> 
+              <code>else:</code>
+                <code class = "indent-code">statement2</code>
+              <br>
+              For example:
+            </p>
+            <code>a = 3
+              <br>
+              if (a % 2 == 0):
+              <br>
+              <code class = "indent-code">print(' a is even')</code>
+              else:
+              <br>
+              <code class = "indent-code">print('a is odd')</code>
+            </code>
+            <p class = "penjelasan">The output will be "a is odd", because 3 divided by 2 is not zero (it still has remainder). Therefore, the condition will be in False statement which is "a is odd".</p>
+          </li>
+          <!-- if...elif...else -->
+          <li>if...elif...else
+            <p>if...elif...else are use for condition that has many outputs (more than two). The basic form of if...elif...else: 
+              <br>
+              <code>if (condition1):
+                <code class = "indent-code">statement1</code>
+            elif (condition2):
+                <code class = "indent-code">statement2</code>
+            elif (condition3):
+                <code class = "indent-code">statement3</code>
+            else:
+                <code class = "indent-code">statement4</code>
+                </code>
+                <br>
+                For example:
+            </p>
+            <code>score = int(input('Please input your score: '))
+              <br>
+              if score >= 90:
+              <br>
+                  <code class = "indent-code">print('You got A')</code>
+              elif score <=85:
+                  <code class = "indent-code">print('You got B')</code>
+              elif score <= 80:
+                  <code class = "indent-code">print('You got C')</code>
+              else:
+              <br>
+                  <code class = "indent-code">print('You got D')</code>
+            </code>
+            
+            <p class = "penjelasan">If the input score is 90, then the output will be "You got A", so on and so forth.</p>
+          </li>
+          <!-- Nested if -->
+          <li>Nested if
+            <p>Basically, nested if are if inside of another if. There will be another selection inside of those if. The basic form of Nested if: 
+            <br>
+            <code>if(condition1):
+              <br>
+              <code class = "indent-code">if(condition2):</code>
+                  <code class = "indent-code-2">statement</code>
+              <code class = "indent-code">else:</code>
+                  <code class = "indent-code-2">statement</code>
+            </code>
+            </p>
+          </li>
+        </ol>
+      </section>
+      
+      <!-- LOOPING STRUCTURE -->
+      <section class="main-section" id="Looping_Structure">
+        <header>Looping Structure</header>
+        <article>Loops are being used to execute a block of program until certain amount or condition, depend on the situation. In Python, there are two types of Loops, such as: </article>
+        <ol>
+          <!-- for -->
+          <li>for
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string) that already being set the maximum amount of loop.
+            <br>
+            <code>for (variable) in (object):
+            <br>
+              <code class = "indent-code">statement</code>
+          else:
+            <br>
+              <code class= "indent-code">statement</code>
+            </code>
+            <br>
+          For example:
+            </p>
+            <code>for i in range (0,9):
+              <code class = "indent-code">if i % 3 == 0:
+                <br>
+                print(i)
+              </code>
+            </code>
+            <p>Output: 
+              <br>
+              0
+              <br>
+              3
+              <br>
+              6
+            </p>
+          </li>
+          <!-- while -->
+          <li>while
+            <p>With the while loop we can execute a set of statements as long as a condition is true.
+              <br>
+              <code>while (condition): 
+              <br>
+                <code class = "indent-code">statement</code>
+              </code>
+            For example:
+            </p>
+            <code>a = 0
+              <br>
+              b = 5
+              <br>
+              while a < b:
+                  <code class = "indent-code-2">a += 1
+                    <br>
+                    print(a)</code>
+            </code>
+            <p>Output:
+              <br>
+              1<br>
+              2<br>
+              3<br>
+              4<br>
+              5<br>
+            </p>
+          </li>
+        </ol>
+      </section>
+      
+      <!-- ARRAY -->
+      <section class="main-section" id="Array">
+        <header>Array</header>
+        <article>Array are used to store multiple values of data (homogen) in a single variable. In Python, Array are called "List". In Python, List can be use with brackets [ ]. The basic structure of List in Python are:  </article>
+        <code>array_name = [list_of_array]</code>
+        <p>For example: </p>
+        <br>
+        <code>mobil = ['Honda','Ford','Mazda']<br>
+          print(mobil)</code>
+        <P>Output:
+          <br> ['Honda'. 'Ford'. 'Mazda']
+        </P>
+      </section>
+      
+      <!-- REFERENCE -->
+      <section class = "main-section" id = "Reference">
+        <header>Reference</header>
+        <article>Most of the documentations are taken from Rizky Bagaskara <a href ="https://www.notion.so/rzkybagaskara/Dasar-Python-af05f8ec5e814d778697a3b71a15d8ab" target = "blank" > Notion </a> and <a href = "https://www.w3schools.com/python/default.asp" target="blank">W3schools.</a> </article>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
